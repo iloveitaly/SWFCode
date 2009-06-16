@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2736D0100917D8C100C7345C /* Copy SWF */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2736D0110917D8DF00C7345C /* Build configuration list for PBXAggregateTarget "Copy SWF" */;
+			buildPhases = (
+				2736D00F0917D8C100C7345C /* Copy SWFs */,
+			);
+			dependencies = (
+				27A64B1E0C3BDCBF0088BEA6 /* PBXTargetDependency */,
+			);
+			name = "Copy SWF";
+			productName = "Copy SWF";
+		};
+		2736D01A0917DA3A00C7345C /* Pre-Process */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2736D01F0917DA5300C7345C /* Build configuration list for PBXAggregateTarget "Pre-Process" */;
+			buildPhases = (
+				2736D0190917DA3A00C7345C /* Pre-Process */,
+			);
+			dependencies = (
+			);
+			name = "Pre-Process";
+			productName = PreProcess;
+		};
+		2736D054091934F300C7345C /* Document */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2736D059091934F500C7345C /* Build configuration list for PBXAggregateTarget "Document" */;
+			buildPhases = (
+				2736D053091934F300C7345C /* Document Source */,
+			);
+			dependencies = (
+			);
+			name = Document;
+			productName = Document;
+		};
+		27CB0A6E0827F8C50020B1CF /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2736CFFF0917D7BC00C7345C /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				27CB0A6D0827F8C50020B1CF /* Compile */,
+			);
+			dependencies = (
+				2736D04209182DF000C7345C /* PBXTargetDependency */,
+			);
+			name = Compile;
+			productName = Compile;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		2736D04109182DF000C7345C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C96535A07102AA40084AAEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2736D01A0917DA3A00C7345C;
+			remoteInfo = "Pre-Process";
+		};
+		27A64B1D0C3BDCBF0088BEA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C96535A07102AA40084AAEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27CB0A6E0827F8C50020B1CF;
+			remoteInfo = Compile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		278FEC97091ACC5500029F84 /* compile.bash */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = compile.bash; sourceTree = "<group>"; };
+		278FEC98091ACC5500029F84 /* pre-process.bash */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = "pre-process.bash"; sourceTree = "<group>"; };
+		278FEC99091ACC5500029F84 /* shared.bash */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = shared.bash; sourceTree = "<group>"; };
+		278FECC2091ACD8300029F84 /* document.bash */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = document.bash; sourceTree = "<group>"; };
+		278FECCD091ACDD300029F84 /* copy.bash */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = copy.bash; sourceTree = "<group>"; };
+		27DC95CD091942570091C4F7 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2736D0260917DB3B00C7345C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27DC95CD091942570091C4F7 /* constants.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		278FEC96091ACC5500029F84 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				278FECCD091ACDD300029F84 /* copy.bash */,
+				278FEC97091ACC5500029F84 /* compile.bash */,
+				278FEC98091ACC5500029F84 /* pre-process.bash */,
+				278FEC99091ACC5500029F84 /* shared.bash */,
+				278FECC2091ACD8300029F84 /* document.bash */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		4C96535607102AA40084AAEB = {
+			isa = PBXGroup;
+			children = (
+				278FEC96091ACC5500029F84 /* Scripts */,
+				2736D0260917DB3B00C7345C /* Source */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4C96535A07102AA40084AAEB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2736D0030917D7BC00C7345C /* Build configuration list for PBXProject "xcode-template" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 4C96535607102AA40084AAEB;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27CB0A6E0827F8C50020B1CF /* Compile */,
+				2736D0100917D8C100C7345C /* Copy SWF */,
+				2736D01A0917DA3A00C7345C /* Pre-Process */,
+				2736D054091934F300C7345C /* Document */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2736D00F0917D8C100C7345C /* Copy SWFs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy SWFs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "./Scripts/copy.bash\nexit $?";
+		};
+		2736D0190917DA3A00C7345C /* Pre-Process */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Pre-Process";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "./Scripts/pre-process.bash\n\n#the script will have to be run twice if the directory structure changed\nif [[ $? != 0 ]]; then\n\t./Scripts/pre-process.bash\nfi\n\nexit $?";
+		};
+		2736D053091934F300C7345C /* Document Source */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Document Source";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Scripts/document.bash\nexit $?";
+		};
+		27CB0A6D0827F8C50020B1CF /* Compile */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Compile;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "./Scripts/compile.bash\nexit $?";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2736D04209182DF000C7345C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2736D01A0917DA3A00C7345C /* Pre-Process */;
+			targetProxy = 2736D04109182DF000C7345C /* PBXContainerItemProxy */;
+		};
+		27A64B1E0C3BDCBF0088BEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27CB0A6E0827F8C50020B1CF /* Compile */;
+			targetProxy = 27A64B1D0C3BDCBF0088BEA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2736D0000917D7BC00C7345C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Compile;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		2736D0010917D7BC00C7345C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Compile;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		2736D0040917D7BC00C7345C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2736D0050917D7BC00C7345C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2736D0120917D8DF00C7345C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy SWF";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		2736D0130917D8DF00C7345C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Copy SWF";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		2736D0200917DA5300C7345C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PreProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		2736D0210917DA5300C7345C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PreProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		2736D05A091934F500C7345C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Document;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		2736D05B091934F500C7345C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Document;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2736CFFF0917D7BC00C7345C /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736D0000917D7BC00C7345C /* Debug */,
+				2736D0010917D7BC00C7345C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2736D0030917D7BC00C7345C /* Build configuration list for PBXProject "xcode-template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736D0040917D7BC00C7345C /* Debug */,
+				2736D0050917D7BC00C7345C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2736D0110917D8DF00C7345C /* Build configuration list for PBXAggregateTarget "Copy SWF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736D0120917D8DF00C7345C /* Debug */,
+				2736D0130917D8DF00C7345C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2736D01F0917DA5300C7345C /* Build configuration list for PBXAggregateTarget "Pre-Process" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736D0200917DA5300C7345C /* Debug */,
+				2736D0210917DA5300C7345C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2736D059091934F500C7345C /* Build configuration list for PBXAggregateTarget "Document" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2736D05A091934F500C7345C /* Debug */,
+				2736D05B091934F500C7345C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C96535A07102AA40084AAEB /* Project object */;
+}
