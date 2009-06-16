@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9BAA7BB20CE50E48002981E2 /* Launch Server */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9BAA7BB50CE50E6C002981E2 /* Build configuration list for PBXAggregateTarget "Launch Server" */;
+			buildPhases = (
+				9BAA7BB10CE50E48002981E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Launch Server";
+			productName = "Launch Server";
+		};
+		9BAA7BC00CE50EAC002981E2 /* Quit Server */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9BAA7BC60CE50EB5002981E2 /* Build configuration list for PBXAggregateTarget "Quit Server" */;
+			buildPhases = (
+				9BAA7BBF0CE50EAC002981E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Quit Server";
+			productName = "Quit Server";
+		};
+		9BAA7D560CE528C3002981E2 /* Run Safari */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9BAA7D600CE528D7002981E2 /* Build configuration list for PBXAggregateTarget "Run Safari" */;
+			buildPhases = (
+				9BAA7D550CE528C3002981E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Run Safari";
+			productName = "Open Safari";
+		};
+		9BE896D10C984A0200880184 /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9BE896D50C984A1100880184 /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				9BAA7BA20CE50DD2002981E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Compile;
+			productName = Compile;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		27B7551C0FE7ED9B00A67786 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constants.h; path = Source/constants.h; sourceTree = "<group>"; };
+		27B755440FE7F2CD00A67786 /* compile.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compile.bash; sourceTree = "<group>"; };
+		27B755450FE7F2CD00A67786 /* copy.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = copy.bash; sourceTree = "<group>"; };
+		27B755460FE7F2CD00A67786 /* document.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = document.bash; sourceTree = "<group>"; };
+		27B755470FE7F2CD00A67786 /* pre-process.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-process.bash"; sourceTree = "<group>"; };
+		27B755480FE7F2CD00A67786 /* shared.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = shared.bash; sourceTree = "<group>"; };
+		27B7560F0FE7FF8500A67786 /* application.mxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = application.mxml; path = Source/application.mxml; sourceTree = "<group>"; };
+		27B7568A0FE8147F00A67786 /* «PROJECTNAME».as */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.actionscript; name = "«PROJECTNAME».as"; path = "Source/«PROJECTNAME».as"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		27B755430FE7F2CD00A67786 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				27B755440FE7F2CD00A67786 /* compile.bash */,
+				27B755450FE7F2CD00A67786 /* copy.bash */,
+				27B755460FE7F2CD00A67786 /* document.bash */,
+				27B755470FE7F2CD00A67786 /* pre-process.bash */,
+				27B755480FE7F2CD00A67786 /* shared.bash */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		9BE896B60C9849C600880184 = {
+			isa = PBXGroup;
+			children = (
+				27B755430FE7F2CD00A67786 /* Scripts */,
+				9BE896CA0C9849D500880184 /* Source */,
+			);
+			sourceTree = "<group>";
+		};
+		9BE896CA0C9849D500880184 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27B7551C0FE7ED9B00A67786 /* constants.h */,
+				27B7560F0FE7FF8500A67786 /* application.mxml */,
+				27B7568A0FE8147F00A67786 /* «PROJECTNAME».as */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		9BE896B80C9849C600880184 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9BE896B90C9849C600880184 /* Build configuration list for PBXProject "FlashProject" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 9BE896B60C9849C600880184;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BAA7BB20CE50E48002981E2 /* Launch Server */,
+				9BE896D10C984A0200880184 /* Compile */,
+				9BAA7D560CE528C3002981E2 /* Run Safari */,
+				9BAA7BC00CE50EAC002981E2 /* Quit Server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BAA7BA20CE50DD2002981E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Scripts/compile.bash\nexit $?";
+		};
+		9BAA7BB10CE50E48002981E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n$PROJECT_FILE_PATH/daemonizer \"$PROJECT_FILE_PATH/FCSHServerTool\" \"/Developer/SDKs/Flex2.sdk/bin/fcsh\"";
+		};
+		9BAA7BBF0CE50EAC002981E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n$PROJECT_FILE_PATH/FCSHClient \"Dummy\" quit";
+		};
+		9BAA7D550CE528C3002981E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_FILE_PATH/FCSHClient $PROJECT_NAME \"mxmlc -default-size 800 600 -output $PROJECT_DIR/$PROJECT_NAME.swf $PROJECT_DIR/$PROJECT_NAME.as\" 2>temp;\nexec < temp\nread LINE\nif [ \"$LINE\" = \"\" ]; then\n\techo;\n\topen /Applications/Safari.app index.html\nelse\n\techo $LINE;\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9BAA7BB60CE50E6C002981E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Launch Server";
+			};
+			name = Debug;
+		};
+		9BAA7BB70CE50E6C002981E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Launch Server";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9BAA7BC70CE50EB5002981E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Quit Server";
+			};
+			name = Debug;
+		};
+		9BAA7BC80CE50EB5002981E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Quit Server";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9BAA7D610CE528D7002981E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Open Safari";
+			};
+			name = Debug;
+		};
+		9BAA7D620CE528D7002981E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Open Safari";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9BE896BA0C9849C600880184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		9BE896BB0C9849C600880184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		9BE896D60C984A1100880184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Compile;
+			};
+			name = Debug;
+		};
+		9BE896D70C984A1100880184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Compile;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BAA7BB50CE50E6C002981E2 /* Build configuration list for PBXAggregateTarget "Launch Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAA7BB60CE50E6C002981E2 /* Debug */,
+				9BAA7BB70CE50E6C002981E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BAA7BC60CE50EB5002981E2 /* Build configuration list for PBXAggregateTarget "Quit Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAA7BC70CE50EB5002981E2 /* Debug */,
+				9BAA7BC80CE50EB5002981E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BAA7D600CE528D7002981E2 /* Build configuration list for PBXAggregateTarget "Run Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAA7D610CE528D7002981E2 /* Debug */,
+				9BAA7D620CE528D7002981E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE896B90C9849C600880184 /* Build configuration list for PBXProject "FlashProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE896BA0C9849C600880184 /* Debug */,
+				9BE896BB0C9849C600880184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE896D50C984A1100880184 /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE896D60C984A1100880184 /* Debug */,
+				9BE896D70C984A1100880184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BE896B80C9849C600880184 /* Project object */;
+}

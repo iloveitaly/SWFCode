@@ -1,0 +1,10 @@
+{
+	FilesToRename = {
+		"Source/template.as" = "Source/ÇPROJECTNAMEÈ.as";
+	};
+	FilesToMacroExpand = (
+		"Source/application.mxml",
+		"Source/ÇPROJECTNAMEÈ.as",
+	);
+	Description = "This project builds a bundle that links against the Cocoa framework.";
+}
