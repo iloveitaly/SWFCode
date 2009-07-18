@@ -6,18 +6,24 @@
 //  Copyright ÇORGANIZATIONNAMEÈ ÇYEARÈ . All rights reserved.
 //
 
-package  {
+package {
 	import flash.display.*;
-	import Logger;
+	import com.mab.debug;
 	
 	public class ÇPROJECTNAMEÈ extends MovieClip {
-		public static function main() {
-			
+		
+		public static function root() : DisplayObjectContainer {
+			return ÇPROJECTNAMEÈ._stage;
 		}
 		
 		public function ÇPROJECTNAMEÈ () {
-			var log:Logger = new Logger(this.stage);
-			log.trace("Hello Application");
+			ÇPROJECTNAMEÈ._stage = this.stage;
+#ifndef IS_PRODUCTION
+			debug.init(FrontSplash.root());
+			debug.initSocket();
+#else
+			debug.disableTracing = true;
+#endif
 		}
 	}
 }

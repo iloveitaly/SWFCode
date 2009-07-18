@@ -1,18 +1,23 @@
 #!/bin/bash
 
 . ./Scripts/shared.bash
+. ./Scripts/pre-process.bash
 
 #------------------------------- Config Settings -------------------------------
 
-swf="./framing_raw.swf"				#the swf to open after compiling
-swfplayer="Flash Player"			#the application to open the swf with
+FLEX_BIN="/Applications/flex_sdk/bin"
+OUTPUT_SWF="splash.swf"				#the swf to open after compiling
+SWF_PLAYER="Flash Player"			#the application to open the swf with
 noErrorProcessing=0					#if theres an error just output it. Useful when your not using preprocessing
 
 #--------------------------------------------------------------------------------
 
-# Get a list of all AS files in the 'source' directory
-cd "$SRCROOT/Source"
-localASFiles=`find . -name "*.as" -or -name "*.actionscript"`
+PATH="$PATH:$FLEX_BIN"
+OUTPUT_SWF="$BUILD_DIR/$OUTPUT_SWF"
+ERROR_FILE="/tmp/swfcode.error"
+
+localASFiles=`find "$SRCROOT/Source" -name "*.as" -or -name "*.actionscript"`
+localASFiles="$localASFiles"
 
 cd "$BUILD_DIR"
 
@@ -26,6 +31,28 @@ cd "$BUILD_DIR"
 
 #---------------------------------------------------------------------------------
 
-$PROJECT_FILE_PATH/FCSHClient $PROJECT_NAME "mxmlc -default-size 800 600 -output $PROJECT_DIR/$PROJECT_NAME.swf $PROJECT_DIR/$PROJECT_NAME.as"
+#$PROJECT_FILE_PATH/FCSHClient $PROJECT_NAME "mxmlc -default-size 800 600 -output $PROJECT_DIR/$PROJECT_NAME.swf $PROJECT_DIR/$PROJECT_NAME.as"
 
-exit $?
+mxmlc \
+-default-size 960 500 \
+-output "$OUTPUT_SWF" \
+-default-background-color 0xFFFFFF \
+-compiler.source-path  /Applications/Adobe\ Flash\ CS3/Configuration/ActionScript\ 3.0/Classes/ \
+-compiler.incremental \
+$BUILD_DIR/source/$PROJECT_NAME.as 2> $ERROR_FILE
+
+#-debug=true
+#echo "mxmlc -default-size 800 600 -output $PROJECT_DIR/$PROJECT_NAME.swf "$localASFiles""
+#-dump-config
+
+COMPILER_RETURN=$?
+
+cat $ERROR_FILE
+
+processCompilerOutput
+
+if [[ $COMPILER_RETURN -eq 0 && -z $swfOut ]]; then
+	open -a "$SWF_PLAYER" "$OUTPUT_SWF"
+fi
+
+exit $COMPILER_RETURN
